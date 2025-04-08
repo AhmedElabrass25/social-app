@@ -71,7 +71,7 @@ const Register = () => {
     }
   }, [router]);
   return (
-    <section className="mt-10">
+    <section className="my-10">
       <div className="container h-full">
         <div className="row flex items-center justify-center h-full">
           <form

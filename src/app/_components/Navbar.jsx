@@ -56,6 +56,7 @@ const Navbar = () => {
                 <>
                   <li>
                     <Link
+                      onClick={() => setMobileNav(false)}
                       href={`/profile`}
                       className="block text-lg py-2 px-3 text-blue-500 hover:text-blue-700 md:border-0 font-medium transition-all duration-200 rounded-md md:mb-0 mb-3"
                     >
@@ -64,6 +65,7 @@ const Navbar = () => {
                   </li>{" "}
                   <li>
                     <Link
+                      onClick={() => setMobileNav(false)}
                       href={`/createPost`}
                       className="block text-lg py-2 px-3 text-blue-500 hover:text-blue-700 md:border-0 font-medium transition-all duration-200 rounded-md md:mb-0 mb-3"
                     >
@@ -78,6 +80,7 @@ const Navbar = () => {
                     localStorage.removeItem("socialToken");
                     dispatch(removeToken());
                     router.push("/login");
+                    setMobileNav(false);
                   }}
                   className="block text-lg bg-blue-600 py-1 px-2 text-white hover:bg-blue-700 md:border-0 font-medium transition-all duration-200 rounded-md md:mb-0 mb-3 cursor-pointer"
                 >
@@ -87,6 +90,7 @@ const Navbar = () => {
                 <>
                   <li>
                     <Link
+                      onClick={() => setMobileNav(false)}
                       href={`/login`}
                       className="block text-lg bg-blue-600 py-1 px-2 text-white hover:bg-blue-700 md:border-0 font-medium transition-all duration-200 rounded-md md:mb-0 mb-3"
                     >
@@ -95,6 +99,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
+                      onClick={() => setMobileNav(false)}
                       href={`/register`}
                       className="block text-lg bg-blue-600 py-1 px-2 text-white hover:bg-blue-700 md:border-0 font-medium transition-all duration-200 rounded-md md:mb-0 mb-3"
                     >

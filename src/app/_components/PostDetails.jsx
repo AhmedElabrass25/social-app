@@ -67,7 +67,7 @@ const PostDetails = ({ post }) => {
   // =====================================
   return (
     <ProtectedRoute>
-      <section className="bg-white border border-gray-200 rounded-lg shadow-sm mb-5 w-[600px]">
+      <section className="bg-white border border-gray-200 rounded-lg shadow-sm mb-5 w-full md:w-[600px]">
         {/* Post Header */}
         <div className="head w-full mb-1 flex items-center justify-between p-3">
           {/* ======post details======= */}
